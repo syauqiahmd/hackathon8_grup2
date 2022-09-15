@@ -48,3 +48,17 @@ const arrayReview = {
     }
   ]
 }
+
+function testing(arr){
+  // let result
+
+  for(let x in arr){
+    for(let i =0 ; i < arr[x].length; i++){
+      console.log(arr[x][i].namaResto)
+    }
+  }
+
+  // return result
+}
+
+console.log(testing(arrayReview))
