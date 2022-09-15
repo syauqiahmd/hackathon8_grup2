@@ -5,10 +5,137 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="/dist/css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <img src="/images/logo.png" class="bi me-2" height="32" alt="" srcset="">
+      </a>
   
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#" class="nav-link px-4 link-dark">Beranda</a></li>
+        <li><a href="#reviewList" class="nav-link px-4 link-dark">Daftar Ulasan</a></li>
+        <li><a href="#about" class="nav-link px-4 link-dark">Tentang Kami</a></li>
+      </ul>
+    </header>
+
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="/images/background.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Ulasanku</h1>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, nulla fuga! Et cumque mollitia velit veniam! Fuga quidem aut, rem quam aspernatur corrupti minus error tempora atque velit neque perspiciatis..</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <a href="#create" class="btn btn-primary btn-lg px-4 me-md-2">Tambah Ulasan</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="divider"></div>
+
+    <!-- bagian isi daftar data -->
+
+    <div class="row align-items-center g-5 py-5 justify-content-center" id="reviewList">
+      <h3 align="center">Daftar Ulasan</h3>
+      <div class="list-group col-lg-9">
+        <!-- itemstart -->
+        <div class="list-group-item d-flex py-4">
+          <div class="d-flex w-100 justify-content-between">
+            <div class="d-flex">
+              <div class="score-sum">
+                <small class="opacity-50 text-nowrap float-start d-block me-4">Total Score</small>
+                <h3 class="opacity-50 text-nowrap float-start d-block me-4">90</h3>
+              </div>
+              <span>
+                <h5 class="mb-2">Nama Rumah Makan</h5>
+                <p class="mb-0 opacity-75">Ulasannya ........ Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt qui doloribus iusto aliquid rerum ad perferendis delectus quibusdam corporis quas debitis quae, repudiandae temporibus repellat tenetur et enim animi adipisci.</p>
+                <small>Direview Oleh : <code>NamaUsernya</code></small>
+                <div>
+                  <span><a href="">hapus</a></span>
+                  <span><a href="">edit</a></span>
+                </div>
+              </span>
+            </div>
+            <small class="opacity-50 text-nowrap ms-5">1 <img src="images/likes.png" alt="" srcset=""></small>
+            
+          </div>
+        </div>
+        <!-- itemEnd -->
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="row g-5 py-5 justify-content-center" id="create">
+      <h3 align="center">Tuliskan Ulasan Anda</h3>
+      <div class="col-9">
+        <form action="">
+          <div class="mb-3 row">
+            <label for="userName" class="col-sm-2 col-form-label">Username</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="userName" value="" required>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="restoName" class="col-sm-2 col-form-label">Nama Tempat</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="restoName" value="">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="address" class="col-sm-2 col-form-label">Alamat</label>
+            <div class="col-sm-10">
+              <textarea name="address" id="address" class=form-control rows="3"></textarea>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="score" class="col-sm-2 col-form-label">Score</label>
+            <div class="col-sm-10">
+              <input type="number" class="form-control" id="score" minlength="0" maxlength="100" value="">
+              <small><i>min 0, max 100</i></small>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- bagian form edit/simpan -->
+
+    <div class="divider"></div>
+
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+      <div class="col mb-3">
+        <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <p class="text-muted">© 2022</p>
+      </div>
+  
+      <div class="col mb-3 .d-none .d-md-block .d-lg-block"></div>
+      <div class="col mb-3 .d-none .d-md-block .d-lg-block"></div>
+      <div class="col mb-3 text-end">
+        <h5>Team Leader</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="https://github.com/Jonathan0012" class="nav-link p-0 text-muted">Jonathan Ronaldo</a></li>
+        </ul>
+      </div>
+  
+      <div class="col mb-3 text-end" id="about">
+        <h5>Tim Kami</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="https://github.com/syauqiahmd" class="nav-link p-0 text-muted">Ahmad Syauqi</a></li>
+          <li class="nav-item mb-2"><a href="https://github.com/banarbagas" class="nav-link p-0 text-muted">Banar Darujati</a></li>
+          <li class="nav-item mb-2"><a href="https://github.com/junandaaa" class="nav-link p-0 text-muted">Junnanda Tri Putra Dewa</a></li>
+          <li class="nav-item mb-2"><a href="https://github.com/nickodsss" class="nav-link p-0 text-muted">Nickolas Darselio</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <script src="/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
