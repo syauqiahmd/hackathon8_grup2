@@ -43,7 +43,7 @@
       <h3 align="center">Daftar Ulasan</h3>
       <div class="list-group col-lg-9" id="dataListContainer">
         <!-- itemstart -->
-        <div class="list-group-item d-flex py-4 mb-0">
+        <div class="list-group-item d-flex py-4 mb-0" id="4">
           <div class="d-flex w-100 justify-content-between">
             <div class="d-flex">
               <div class="score-sum">
@@ -55,8 +55,8 @@
                 <p class="mb-0 opacity-75">Ulasannya ........ Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt qui doloribus iusto aliquid rerum ad perferendis delectus quibusdam corporis quas debitis quae, repudiandae temporibus repellat tenetur et enim animi adipisci.</p>
                 <small>Direview Oleh : <code>NamaUsernya</code></small>
                 <div class="mt-3">
-                  <span><input type="button" class="btn btn-warning" value="Hapus"></span>
-                  <span><input type="button" class="btn btn-secondary" value="Edit"></span>
+                  <span><input type="button" class="btn btn-warning" onclick="funcName(id)" value="Hapus"></span>
+                  <span><input type="button" class="btn btn-secondary" onclick="funcName(id)" value="Edit"></span>
                 </div>
               </span>
             </div>
@@ -94,10 +94,21 @@
             </div>
           </div>
           <div class="mb-3 row">
+            <label for="review" class="col-sm-2 col-form-label">Ulasan</label>
+            <div class="col-sm-10">
+              <textarea name="review" id="review" class=form-control rows="3"></textarea>
+            </div>
+          </div>
+          <div class="mb-3 row">
             <label for="score" class="col-sm-2 col-form-label">Score</label>
             <div class="col-sm-10">
               <input type="number" class="form-control" id="score" minlength="0" maxlength="100" value="">
               <small><i>min 0, max 100</i></small>
+            </div>
+          </div>
+          <div class="mb-3 row" align="center">
+            <div class="col-sm-10">
+              <input type="button" onclick=".......()" class="btn btn-success" value="Submit">
             </div>
           </div>
         </form>
