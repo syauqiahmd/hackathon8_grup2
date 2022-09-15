@@ -65,12 +65,12 @@ function readData(){
         <div class="d-flex">\
           <div class="score-sum">\
             <small class="opacity-50 text-nowrap float-start d-block me-4">Total Score</small>\
-            <h3 class="opacity-50 text-nowrap float-start d-block me-4">'+ rating[0] +'</h3>\
+            <h3 class="opacity-50 text-nowrap float-start d-block me-4" id="score-'+ id +'">'+ rating[0] +'</h3>\
           </div>\
           <span>\
-            <h5 class="mb-2">'+ namaResto +'</h5>\
-            <small>Alamat : '+ alamat +'</small>\
-            <p class="mb-0 mt-3 opacity-75">'+ rating[1] +'</p>\
+            <h5 class="mb-2" id="namaResto-'+ id +'">'+ namaResto +'</h5>\
+            <small id="alamat-'+ id +'">Alamat : '+ alamat +'</small>\
+            <p class="mb-0 mt-3 opacity-75" id="review-'+ id +'">'+ rating[1] +'</p>\
             <small>Direview Oleh : <code>'+ username +'</code></small>\
             <div class="mt-3">\
               <span><input type="button" class="btn btn-warning" onclick="funcName('+ [username, id] +')" value="Hapus"></span>\
@@ -78,7 +78,7 @@ function readData(){
             </div>\
           </span>\
         </div>\
-        <small class="opacity-50 text-nowrap ms-5"> '+ star +' <img src="images/likes.png" alt="" srcset=""></small>\
+        <small class="opacity-50 text-nowrap ms-5" id="star-'+ id +'"> '+ star +' <img src="images/likes.png" alt="" srcset=""></small>\
       </div>\
     </div>'
 
