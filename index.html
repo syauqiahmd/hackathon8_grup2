@@ -86,31 +86,31 @@
           <div class="mb-3 row">
             <label for="restoName" class="col-sm-2 col-form-label">Nama Tempat</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="restoName" value="">
+              <input type="text" class="form-control" id="restoName" value="" required>
             </div>
           </div>
           <div class="mb-3 row">
             <label for="address" class="col-sm-2 col-form-label">Alamat</label>
             <div class="col-sm-10">
-              <textarea name="address" id="address" class=form-control rows="3"></textarea>
+              <textarea name="address" id="address" class=form-control rows="3" required></textarea>
             </div>
           </div>
           <div class="mb-3 row">
             <label for="review" class="col-sm-2 col-form-label">Ulasan</label>
             <div class="col-sm-10">
-              <textarea name="review" id="review" class=form-control rows="3"></textarea>
+              <textarea name="review" id="review" class=form-control rows="3" required></textarea>
             </div>
           </div>
           <div class="mb-3 row">
             <label for="score" class="col-sm-2 col-form-label">Score</label>
             <div class="col-sm-10">
-              <input type="number" class="form-control" id="score" minlength="0" maxlength="100" value="">
+              <input type="number" class="form-control" id="score" min="0" max="10" step="1" value="" required>
               <small><i>min 0, max 100</i></small>
             </div>
           </div>
           <div class="mb-3 row" align="center">
             <div class="col-sm-10">
-              <input type="button" onclick=".......()" class="btn btn-success" value="Submit">
+              <input type="submit" onclick=".......()" class="btn btn-success" value="Submit">
             </div>
           </div>
         </form>
@@ -118,8 +118,6 @@
     </div>
 
     <!-- batas bagian form edit/simpan -->
-
-    <div class="divider"></div>
 
     <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
       <div class="col mb-3">

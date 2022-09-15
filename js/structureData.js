@@ -63,9 +63,9 @@ function readData(){
       let templateHtml = '<div class="list-group-item d-flex py-4 mb-0" id="'+ id +'">\
       <div class="d-flex w-100 justify-content-between">\
         <div class="d-flex">\
-          <div class="score-sum">\
-            <small class="opacity-50 text-nowrap float-start d-block me-4">Total Score</small>\
-            <h3 class="opacity-50 text-nowrap float-start d-block me-4" id="score-'+ id +'">'+ rating[0] +'</h3>\
+          <div>\
+            <div><small class="opacity-50 text-nowrap float-start d-block me-4">Total Score</small></div>\
+            <div><h3 class="opacity-50 text-nowrap float-start d-block me-4" id="score-'+ id +'">'+ rating[0] +'/10</h3></div>\
           </div>\
           <span>\
             <h5 class="mb-2" id="namaResto-'+ id +'">'+ namaResto +'</h5>\
@@ -78,8 +78,8 @@ function readData(){
             </div>\
           </span>\
         </div>\
-        <small class="opacity-50 text-nowrap ms-5" id="star-'+ id +'"> '+ star +'</small>\
-        <img src="images/likes.png" alt="" srcset="" onclick="star(\''+ username +'\', '+ id +')">\
+        <span><small class="opacity-50 text-nowrap ms-5" id="star-'+ id +'"> '+ star +'</small>\
+        <img src="images/likes.png"  width="30px" alt="" srcset="" onclick="star(\''+ username +'\', '+ id +')"></span>\
       </div>\
     </div>'
 
