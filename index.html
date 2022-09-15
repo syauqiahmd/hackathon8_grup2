@@ -41,9 +41,9 @@
 
     <div class="row align-items-center g-5 py-5 justify-content-center" id="reviewList">
       <h3 align="center">Daftar Ulasan</h3>
-      <div class="list-group col-lg-9">
+      <div class="list-group col-lg-9" id="dataListContainer">
         <!-- itemstart -->
-        <div class="list-group-item d-flex py-4">
+        <div class="list-group-item d-flex py-4 mb-0">
           <div class="d-flex w-100 justify-content-between">
             <div class="d-flex">
               <div class="score-sum">
@@ -54,9 +54,9 @@
                 <h5 class="mb-2">Nama Rumah Makan</h5>
                 <p class="mb-0 opacity-75">Ulasannya ........ Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt qui doloribus iusto aliquid rerum ad perferendis delectus quibusdam corporis quas debitis quae, repudiandae temporibus repellat tenetur et enim animi adipisci.</p>
                 <small>Direview Oleh : <code>NamaUsernya</code></small>
-                <div>
-                  <span><a href="">hapus</a></span>
-                  <span><a href="">edit</a></span>
+                <div class="mt-3">
+                  <span><input type="button" class="btn btn-warning" value="Hapus"></span>
+                  <span><input type="button" class="btn btn-secondary" value="Edit"></span>
                 </div>
               </span>
             </div>
@@ -70,6 +70,7 @@
 
     <div class="divider"></div>
 
+    <!-- bagian form edit/simpan -->
     <div class="row g-5 py-5 justify-content-center" id="create">
       <h3 align="center">Tuliskan Ulasan Anda</h3>
       <div class="col-9">
@@ -103,7 +104,7 @@
       </div>
     </div>
 
-    <!-- bagian form edit/simpan -->
+    <!-- batas bagian form edit/simpan -->
 
     <div class="divider"></div>
 
