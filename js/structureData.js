@@ -73,12 +73,13 @@ function readData(){
             <p class="mb-0 mt-3 opacity-75" id="review-'+ id +'">'+ rating[1] +'</p>\
             <small>Direview Oleh : <code>'+ username +'</code></small>\
             <div class="mt-3">\
-              <span><input type="button" class="btn btn-warning" onclick="funcName('+ [username, id] +')" value="Hapus"></span>\
-              <span><input type="button" class="btn btn-secondary" onclick="funcName('+ [username, id] +')" value="Edit"></span>\
+              <span><input type="button" class="btn btn-warning" onclick="funcName(\''+ username +'\', '+ id +')" value="Hapus"></span>\
+              <span><input type="button" class="btn btn-secondary" onclick="funcName(\''+ username +'\', '+ id +')" value="Edit"></span>\
             </div>\
           </span>\
         </div>\
-        <small class="opacity-50 text-nowrap ms-5" id="star-'+ id +'"> '+ star +' <img src="images/likes.png" alt="" srcset=""></small>\
+        <small class="opacity-50 text-nowrap ms-5" id="star-'+ id +'"> '+ star +'</small>\
+        <img src="images/likes.png" alt="" srcset="" onclick="star(\''+ username +'\', '+ id +')">\
       </div>\
     </div>'
 
@@ -91,3 +92,15 @@ function readData(){
 }
 
 readData()
+
+function star(username, id){
+  const target = document.getElementById('star-'+id)
+  target.innerHTML++
+
+  let targetarr = arrayReview[username]
+  for(let i = 0; i < targetarr.length; i++){
+    if(targetarr[i].id === id){
+      targetarr[i].star++
+    }
+  }
+}
