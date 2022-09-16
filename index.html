@@ -41,9 +41,10 @@
 
     <div class="row align-items-center g-5 py-5 justify-content-center" id="reviewList">
       <h3 align="center">Daftar Ulasan</h3>
-      <div class="list-group   col-lg-9" id="dataListContainer">
+      <div class="list-group col-lg-9" id="dataListContainer">
+        <!-- template aja buat referensi ntar di delete -->
         <!-- itemstart -->
-        <div class="list-group-item d-flex py-4 mb-0" id="4">
+        <div class="list-group-item d-flex py-4 mb-0" id="111">
           <div class="d-flex w-100 justify-content-between">
             <div class="d-flex">
               <div class="score-sum">
@@ -52,7 +53,9 @@
               </div>
               <span>
                 <h5 class="mb-2" >Nama Rumah Makan</h5>
+                <small>Alamat : Lorem ipsum, dolor sit amet consectetur adipisicing elit.</small>
                 <p class="mb-0 opacity-75" id="editUlasan">Ulasannya: Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt qui doloribus iusto aliquid rerum ad perferendis delectus quibusdam corporis quas debitis quae, repudiandae temporibus repellat tenetur et enim animi adipisci.</p>
+
                 <small>Direview Oleh : <code>NamaUsernya</code></small>
                 <div class="mt-3">
                   <span><input type="button" class="btn btn-warning" onclick="warning()" value="Hapus"></span>
@@ -83,31 +86,31 @@
           <div class="mb-3 row">
             <label for="restoName" class="col-sm-2 col-form-label">Nama Tempat</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="restoName" value="">
+              <input type="text" class="form-control" id="restoName" value="" required>
             </div>
           </div>
           <div class="mb-3 row">
             <label for="address" class="col-sm-2 col-form-label">Alamat</label>
             <div class="col-sm-10">
-              <textarea name="address" id="address" class=form-control rows="3"></textarea>
+              <textarea name="address" id="address" class=form-control rows="3" required></textarea>
             </div>
           </div>
           <div class="mb-3 row">
             <label for="review" class="col-sm-2 col-form-label">Ulasan</label>
             <div class="col-sm-10">
-              <textarea name="review" id="review" class=form-control rows="3"></textarea>
+              <textarea name="review" id="review" class=form-control rows="3" required></textarea>
             </div>
           </div>
           <div class="mb-3 row">
             <label for="score" class="col-sm-2 col-form-label">Score</label>
             <div class="col-sm-10">
-              <input type="number" class="form-control" id="score" minlength="0" maxlength="100" value="">
-              <small><i>min 0, max 100</i></small>
+              <input type="number" class="form-control" id="score" min="0" max="10" step="1" value="" required>
+              <small><i>min 0, max 10</i></small>
             </div>
           </div>
           <div class="mb-3 row" align="center">
             <div class="col-sm-10">
-              <input type="button" onclick=".......()" class="btn btn-success" value="Submit">
+              <input type="submit" onclick=".......()" class="btn btn-success" value="Submit">
             </div>
           </div>
         </form>
@@ -115,8 +118,6 @@
     </div>
 
     <!-- batas bagian form edit/simpan -->
-
-    <div class="divider"></div>
 
     <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
       <div class="col mb-3">
@@ -148,5 +149,6 @@
   </div>
   <script src="./dist/js/bootstrap.bundle.min.js"></script>
   <script src="./js/script.js"></script>
+  <script src="./js/structureData.js"></script>
 </body>
 </html>
