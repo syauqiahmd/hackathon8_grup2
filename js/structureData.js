@@ -71,7 +71,7 @@ function readData(){
             <h5 class="mb-2" id="namaResto-'+ id +'">'+ namaResto +'</h5>\
             <small id="alamat-'+ id +'">Alamat : '+ alamat +'</small>\
             <p class="mb-0 mt-3 opacity-75" id="review-'+ id +'">'+ rating[1] +'</p>\
-            <small>Direview Oleh : <code>'+ username +'</code></small>\
+            <small id="username-'+ id +'">Direview Oleh : <code>'+ username +'</code></small>\
             <div class="mt-3">\
               <span><input type="button" class="btn btn-warning" onclick="warning('+ id +')" value="Hapus"></span>\
               <span><input type="button" class="btn btn-secondary" onclick="edit('+ id +')" value="Edit"></span>\
