@@ -73,8 +73,8 @@ function readData(){
             <p class="mb-0 mt-3 opacity-75" id="review-'+ id +'">'+ rating[1] +'</p>\
             <small>Direview Oleh : <code>'+ username +'</code></small>\
             <div class="mt-3">\
-              <span><input type="button" class="btn btn-warning" onclick="funcName(\''+ username +'\', '+ id +')" value="Hapus"></span>\
-              <span><input type="button" class="btn btn-secondary" onclick="funcName(\''+ username +'\', '+ id +')" value="Edit"></span>\
+              <span><input type="button" class="btn btn-warning" onclick="warning('+ id +')" value="Hapus"></span>\
+              <span><input type="button" class="btn btn-secondary" onclick="edit('+ id +')" value="Edit"></span>\
             </div>\
           </span>\
         </div>\

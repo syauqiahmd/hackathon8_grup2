@@ -1,20 +1,19 @@
 function deleteComment(){
 }
 
-const warning = () =>{
+const warning = (id) =>{
   if (confirm('Yakin mau dihapus?')){
-    document.getElementById("4").setAttribute("id", "hapus")
+    document.getElementById(id).setAttribute("id", "hapus")
   } else {
     console.log('Comment tidak jadi dihapus')
   }
 }
 
-const edit = () =>{
+const edit = (id) =>{
   let text = ''
   let ulasan = prompt('Tulis ulasan yang ingin kamu edit:', 'Edit ulasan')
   text = `Ulasan: ${ulasan}`
-  // console.log(ulasan)
-  let edit = document.getElementById("editUlasan")
+  let edit = document.getElementById("review-"+id)
   edit.innerHTML = text
 }
 
