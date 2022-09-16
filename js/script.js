@@ -9,9 +9,16 @@ const warning = (id) =>{
 const edit = (id) =>{
   let text = ''
   let ulasan = prompt('Tulis ulasan yang ingin kamu edit:', 'Edit ulasan')
-  text = `Ulasan: ${ulasan}`
-  let edit = document.getElementById("review-"+id)
-  edit.innerHTML = text
+  if (ulasan){
+    text = `Ulasan: ${ulasan}`
+    let edit = document.getElementById("review-"+id)
+    edit.innerHTML = text
+  } else {
+    document.getElementById("review-"+id).innerHTML
+  }
+  // text = `Ulasan: ${ulasan}`
+  // let edit = document.getElementById("review-"+id)
+  // edit.innerHTML = text
 }
 
 const edit2 = (username) => {
