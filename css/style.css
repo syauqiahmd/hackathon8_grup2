@@ -23,6 +23,11 @@ body{
   display: none !important;
 }
 
-#tombolLike:hover {
+.tombol-like {
+  opacity: 70%;
+}
+
+.tombol-like:hover {
   cursor: pointer;
+  opacity: 100%;
 }

@@ -112,7 +112,7 @@ function readData(){
           </span>\
         </div>\
         <span><small class="opacity-50 text-nowrap ms-5" id="star-'+ id +'"> '+ star +'</small>\
-        <img src="images/likes.png"  width="30px" alt="" srcset="" onclick="star(\''+ username +'\', '+ id +')"></span>\
+        <img src="images/star.png"  width="30px" class="tombol-like" alt="" srcset="" onclick="star(\''+ username +'\', '+ id +')"></span>\
       </div>\
     </div>'
 
