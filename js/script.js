@@ -17,6 +17,14 @@ const edit = (id) =>{
   edit.innerHTML = text
 }
 
+const edit2 = (username) => {
+  let text = ''
+  let ulasanUsername = promp('Masukkan username baru kamu:', 'Isi username')
+  text = ulasanUsername
+  let edit = document.getElementById ("username-"+id)
+  edit.innerHTML = text
+}
+
 const like = () => {
   
 }
