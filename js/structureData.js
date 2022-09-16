@@ -1,52 +1,85 @@
 const arrayReview = {
-  junanda : [
+  junanda88: [
     {
     id: 1,
-    namaResto: 'rumah makan padang',
-    alamat: 'nama jalannya',
-    rating: [9, 'fgdahfgdkasgf'],
-    star: 0
+    namaResto: 'Restoran SEDERHANA Kelapa Gading',
+    alamat: 'Jl. Boulevard Raya Blok TA.2 No.22, RT.8/RW.1, Klp. Gading Tim., Kec. Klp. Gading, Kota Jkt Utara, Daerah Khusus Ibukota Jakarta 14240',
+    rating: [9, 'Always the best decision to be here'],
+    star: 5
     },
     {
     id: 2,
-    namaResto: 'rumah  padang',
-    alamat: 'nama jalannya',
-    rating: [9, 'fgdahfgdkasgf'],
-    star: 0
+    namaResto: 'SKYE',
+    alamat: 'BCA Tower Lt. 56, Jl. M.H. Thamrin No. 1, RT.001 / RW.005, Menteng, RT.1/RW.5, Menteng, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10350',
+    rating: [8.5, 'Lovely place with view.'],
+    star: 4
     }
   ],
-  nicholas : [
+  nicko_99: [
     {
     id: 3,
-    namaResto: 'rumah makan ',
-    alamat: 'nama jalannya',
-    rating: [1, 'fgdahfgdkasgf'],
-    star: 0
+    namaResto: 'PLATARAN Dharmawangsa',
+    alamat: 'Jl. Dharmawangsa Raya No.6, RT.4/RW.2, Pulo, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12160',
+    rating: [8.7, 'A recommended Luxurious Indonesian Restaurant in Jakarta.'],
+    star: 4.5
     },
     {
     id: 4,
-    namaResto: 'rumah  padang',
-    alamat: 'nama jalannya',
-    rating: [9, 'fgdahfgdkasgf'],
-    star: 0
+    namaResto: 'Restoran SEDERHANA Kelapa Gading',
+    alamat: 'Jl. Boulevard Raya Blok TA.2 No.22, RT.8/RW.1, Klp. Gading Tim., Kec. Klp. Gading, Kota Jkt Utara, Daerah Khusus Ibukota Jakarta 14240',
+    rating: [9, 'Love it. Clean dining space, reasonable price (nasi dendeng for 25k)'],
+    star: 4
     }
   ],
-  siapa : [
+  ahmad_s: [
     {
     id: 5,
-    namaResto: 'rumah makan padang',
-    alamat: 'nama jalannya',
-    rating: [9, 'fgdahfgdkasgf'],
-    star: 0
+    namaResto: 'PLATARAN Dharmawangsa',
+    alamat: 'Jl. Dharmawangsa Raya No.6, RT.4/RW.2, Pulo, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12160',
+    rating: [8, 'Nice ambience with Javanese wooden carved'],
+    star: 4
     },
     {
     id: 6,
-    namaResto: 'rumah  padang',
-    alamat: 'nama jalannya',
-    rating: [9, 'fgdahfgdkasgf'],
-    star: 0
+    namaResto: 'SKYE',
+    alamat: 'BCA Tower Lt. 56, Jl. M.H. Thamrin No. 1, RT.001 / RW.005, Menteng, RT.1/RW.5, Menteng, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10350',
+    rating: [8.5, 'The view is breathtaking'],
+    star: 4
+    }
+  ],
+  jonathan123: [
+    {
+    id: 7,
+    namaResto: 'IPPEKE KOMACHI',
+    alamat: 'Mall Kelapa Gading 3 Lantai Dasar Unit 38A-B, Jalan Boulevard Kelapa Gading Blok M, Kelapa Gading, RT.13/RW.18, Klp. Gading Tim., Kec. Klp. Gading, Kota Jkt Utara, Daerah Khusus Ibukota Jakarta 14240',
+    rating: [8.6, 'One of my favorite Japanese Resto'],
+    star: 5
+    },
+    {
+    id: 8,
+    namaResto: 'Bakmi Apin Sukajadi',
+    alamat: 'Jl. Sukajadi No.170, Pasteur, Kec. Sukajadi, Kota Bandung, Jawa Barat 40162',
+    rating: [9, 'You love noodles? Must try this one.'],
+    star: 4
+    }
+  ],
+  banar12: [
+    {
+    id: 9,
+    namaResto: 'IPPEKE KOMACHI',
+    alamat: 'Mall Kelapa Gading 3 Lantai Dasar Unit 38A-B, Jalan Boulevard Kelapa Gading Blok M, Kelapa Gading, RT.13/RW.18, Klp. Gading Tim., Kec. Klp. Gading, Kota Jkt Utara, Daerah Khusus Ibukota Jakarta 14240',
+    rating: [8.2, 'One of the oldest and tastiest Japanese Restaurant in the heart of Kelapa Gading.'],
+    star: 5
+    },
+    {
+    id: 10,
+    namaResto: 'Bakmi Apin Sukajadi',
+    alamat: 'Jl. Sukajadi No.170, Pasteur, Kec. Sukajadi, Kota Bandung, Jawa Barat 40162',
+    rating: [8, 'This Noodle house is recommended for you'],
+    star: 5
     }
   ]
+
 }
 
 const target = document.querySelector('#dataListContainer')
