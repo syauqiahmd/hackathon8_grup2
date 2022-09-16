@@ -31,3 +31,12 @@ body{
   cursor: pointer;
   opacity: 100%;
 }
+
+.like-container{
+  text-align: center;
+  min-width: 50px;
+}
+
+.score-container{
+  min-width: 100px;
+}

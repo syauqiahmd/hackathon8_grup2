@@ -21,7 +21,7 @@ const arrayReview = {
     namaResto: 'PLATARAN Dharmawangsa',
     alamat: 'Jl. Dharmawangsa Raya No.6, RT.4/RW.2, Pulo, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12160',
     rating: [8.7, 'A recommended Luxurious Indonesian Restaurant in Jakarta.'],
-    star: 4.5
+    star: 4
     },
     {
     id: 4,
@@ -96,7 +96,7 @@ function readData(){
       let templateHtml = '<div class="list-group-item d-flex py-4 mb-0" id="'+ id +'">\
       <div class="d-flex w-100 justify-content-between">\
         <div class="d-flex">\
-          <div>\
+          <div class="score-container">\
             <div><small class="opacity-50 text-nowrap float-start d-block me-4">Total Score</small></div>\
             <div><h3 class="opacity-50 text-nowrap float-start d-block me-4" id="score-'+ id +'">'+ rating[0] +'/10</h3></div>\
           </div>\
@@ -111,8 +111,10 @@ function readData(){
             </div>\
           </span>\
         </div>\
-        <span><small class="opacity-50 text-nowrap ms-5" id="star-'+ id +'"> '+ star +'</small>\
-        <img src="images/star.png"  width="30px" class="tombol-like" alt="" srcset="" onclick="star(\''+ username +'\', '+ id +')"></span>\
+        <div class="ms-4 like-container">\
+          <img src="images/star.png"  width="30px" class="tombol-like" alt="" srcset="" onclick="star(\''+ username +'\', '+ id +')">\
+          <small class="opacity-50 text-nowrap" id="star-'+ id +'"> '+ star +'</small>\
+        </div>\
       </div>\
     </div>'
 
