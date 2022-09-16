@@ -1,6 +1,3 @@
-function deleteComment(){
-}
-
 const warning = (id) =>{
   if (confirm('Yakin mau dihapus?')){
     document.getElementById(id).setAttribute("id", "hapus")
@@ -23,16 +20,6 @@ const edit2 = (username) => {
   text = ulasanUsername
   let edit = document.getElementById ("username-"+id)
   edit.innerHTML = text
-}
-
-const like = () => {
-  
-}
-
-
-function updateData(id, arrData){
-// id dan data array yg mau ditambahkan
-
 }
 
 function createData() {
@@ -61,13 +48,12 @@ function createData() {
     star : 0    
   };
   output[userName].push(tempobj);
-  // console.log(tempobj.rating[0]);
-  // return output;
+
   const target = document.querySelector('#dataListContainer');
   let templateHtml = '<div class="list-group-item d-flex py-4 mb-0" id="'+ tempobj.id +'">\
       <div class="d-flex w-100 justify-content-between">\
         <div class="d-flex">\
-          <div>\
+          <div class="score-container">\
             <div><small class="opacity-50 text-nowrap float-start d-block me-4">Total Score</small></div>\
             <div><h3 class="opacity-50 text-nowrap float-start d-block me-4" id="score-'+ tempobj.id +'">'+ tempobj.rating[0] +'/10</h3></div>\
           </div>\
@@ -82,23 +68,13 @@ function createData() {
             </div>\
           </span>\
         </div>\
-        <span><small class="opacity-50 text-nowrap ms-5" id="star-'+ tempobj.id +'"> '+ tempobj.star +'</small>\
-        <img src="images/likes.png"  width="30px" alt="" srcset="" onclick="star(\''+ userName +'\', '+ tempobj.id +')"></span>\
+        <div class="ms-4 like-container">\
+        <img src="images/star.png"  width="30px" class="tombol-like" alt="" srcset="" onclick="star(\''+ userName +'\', '+ tempobj.id +')">\
+        <span><small class="opacity-50 text-nowrap" id="star-'+ tempobj.id +'"> '+ tempobj.star +'</small>\
+      </div>\
       </div>\
     </div>'
 
-      target.innerHTML += templateHtml
-      // document.getElementById("submitBtn").
-}
-
-function start(id){
-  
-}
-
-function readData(data){
-  // data dalam bentuk Array[]
-}
-
-function searchData(keyword){
+    target.innerHTML += templateHtml
 
 }
